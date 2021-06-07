@@ -1,0 +1,42 @@
+package Assignment2;
+
+public class Main {
+
+	public static void main(String[] args) { //class Main
+		
+		AdvertisementMarketing am = new AdvertisementMarketing("Top of Clothing Rental", "No. 136, Jalan Tamingsari, 26531, Kuala Lumpur", "https://clothingrentalkl.com", 58836460);
+		System.out.println();
+				
+		ClothType fashionmodern = new ClothType(); 
+		fashionmodern.printInfo();
+		System.out.println(fashionmodern.printInfoFashionModern()); //print info for fashion modern
+		System.out.println("CLOTHING RENTAL BUSINESS");
+		System.out.println("==========================");
+		
+		ClothType traditionalcustoms = new ClothType();
+		traditionalcustoms.printInfo();
+		System.out.println(traditionalcustoms.printInfoTraditionalCustoms()); //print info for traditional customs
+		System.out.println("CLOTHING RENTAL BUSINESS");
+		System.out.println("==========================");
+		
+		ClothType dinnerdress = new ClothType();
+		dinnerdress.printInfo();
+		System.out.println(dinnerdress.printInfoDinnerDress()); //print info for dinner dress
+		System.out.println("CLOTHING RENTAL BUSINESS");
+		System.out.println("==========================");
+		
+		Customer customer = new Customer();
+		System.out.println("CLOTHING RENTAL CENTRE");
+		System.out.println("==========================");
+		
+		Employees employee = new Employees();
+		System.out.println("CLOTHING RENTAL CENTRE");
+		System.out.println("==========================");
+		
+		Finance finance = new Finance(425.20, 777.41, 300.85, 654.10, 392.14, 21563.48);
+		System.out.println("CLOTHING RENTAL CENTRE");
+		System.out.println("==========================");
+
+	}
+	
+} //end class of Main
